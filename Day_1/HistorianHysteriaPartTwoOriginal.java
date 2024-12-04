@@ -22,7 +22,7 @@ public class HistorianHysteriaPartTwoOriginal {
   
     try (BufferedReader bufferedReader = new BufferedReader(new FileReader(filepath))) {
       while ((line = bufferedReader.readLine()) != null) {
-        String[] values = line.split("\\s{3}"); // Split by 3 spaces, \\t for tabs
+        String[] values = line.split("\\s{3}");
 
         left_list.add(Integer.parseInt(values[0]));
         right_list.add(Integer.parseInt(values[1]));
@@ -30,9 +30,7 @@ public class HistorianHysteriaPartTwoOriginal {
 
       for (int i=0; i<right_list.size(); i++) {
         if (occurrences.containsKey(right_list.get(i))) {
-          // int value;
-          // value = occurrences.get(right_list[i]) +1;
-          occurrences.replace(right_list.get(i), occurrences.get(right_list.get(i)) +1); // to avoid the extra variable
+          occurrences.replace(right_list.get(i), occurrences.get(right_list.get(i)) +1);
         } else {
           occurrences.put(right_list.get(i), 1);
         }
