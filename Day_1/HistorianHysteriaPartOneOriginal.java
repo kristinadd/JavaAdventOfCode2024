@@ -28,7 +28,7 @@ public class HistorianHysteriaPartOneOriginal {
       new_list.sort(null);
       
       for (int i = 0; i < old_list.size(); i++) {
-        difference = Math.abs(old_list.get(i) - new_list.get(i));
+        difference = Math.abs(old_list.get(i) - new_list.get(i)); // https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/lang/Math.html
         result += difference;
       }
         System.out.println(result);
