@@ -11,7 +11,7 @@ public class HistorianHysteriaPartOneOriginal {
     int result = 0;
     int difference;
 
-    String filepath = "Day_1/day-1-part-1.csv";
+    String filepath = "Day_1/day_1.csv";
     String line;
 
     ArrayList<Integer> old_list = new ArrayList<>();
