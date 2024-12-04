@@ -22,7 +22,7 @@ public class HistorianHysteriaPartTwoMini {
         occurrences.put(right_list[i], 1);
       }
     }
-    System.out.println(occurrences);
+    System.out.println("Occurrences Hash: " + occurrences);
 
     for (int i=0; i<left_list.length; i++) {
       num = left_list[i];
@@ -31,6 +31,6 @@ public class HistorianHysteriaPartTwoMini {
       }
     }
 
-    System.out.println(score);
+    System.out.println("The similarity score is: " + score);
   }
 }
