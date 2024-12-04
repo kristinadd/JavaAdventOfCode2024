@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class HistorianHysteriaOriginal {
+public class HistorianHysteriaPartOneOriginal {
 
   public static void main(String[] args) {
     int result = 0;
