@@ -1,7 +1,7 @@
 package Day_1;
 import java.util.Arrays;
 
-public class HistorianHysteria {
+public class HistorianHysteriaMini {
 
   public static int historinHisteria(int[] old_list, int[] new_list) {
     Arrays.sort(old_list);
