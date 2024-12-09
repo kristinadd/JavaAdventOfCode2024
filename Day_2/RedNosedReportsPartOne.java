@@ -27,7 +27,9 @@ public class RedNosedReportsPartOne {
 
     for (int i=0; i<reports.length; i++) {
       levels[i] = reports[i].split(" "); // dynamic creation of the inner array
-      // System.out.println(Arrays.toString(levels[i]));
+      // reports[i].split(" ") returns a new String[] array that is dynamically created by the split() method.
+      // In Java, arrays are objects, and assigning levels[i] = ... simply assigns a reference to the newly created String[] object
+      // No explicit new keyword is needed here because split(" ") already creates the array for you.
     }
 
     int[][] intLevels = new int[reports.length][];
@@ -40,6 +42,32 @@ public class RedNosedReportsPartOne {
       System.out.println(Arrays.toString(intLevels[i]));
     }
 
-    
+    for (int[] row : intLevels) {
+      isIncreasing(row);
+      isDecreasing(row);
+    }
   }
+
+  public static boolean isIncreasing(int[] row) {
+      for (int j=1; j<row.length; j++) {
+        if (row[j] <= row[j -1]) {
+          System.out.println("Row " + j + " is not increasing!");
+          return false;
+        }
+      }
+    System.out.println("The row is increasing");
+    return true;
+  }
+
+  public static boolean isDecreasing(int[] row) {
+    for (int j=1; j<row.length; j++) {
+      if (row[j] >= row[j -1]) {
+        System.out.println("Row " + j + " is not decreasing!");
+        return false;
+      }
+    }
+  System.out.println("The row is decreasing");
+  return true;
+  }
+
 }
