@@ -78,13 +78,13 @@ import java.util.Arrays;
 
 public class RedNosedReportsPartOne {
     public static void main(String[] args) {
-        String[] reports = { 
+        String[] reports = {
             "7 6 4 2 1", 
             "1 2 7 8 9", 
             "9 7 6 2 1", 
             "1 3 2 4 5", 
             "8 6 4 4 1", 
-            "1 3 6 7 9" 
+            "1 3 6 7 9"
         };
 
         int[][] intLevels = new int[reports.length][];
@@ -122,10 +122,12 @@ public class RedNosedReportsPartOne {
         for (int i = 1; i < row.length; i++) {
             int diff = row[i] - row[i - 1];
 
+            // If the difference is not within the range [1, 3], it's not safe
             if (diff < 1 || diff > 3) {
-                return false; // Not within the allowed difference range
+                return false;
             }
 
+            // Check the increasing and decreasing trends
             if (row[i] < row[i - 1]) {
                 increasing = false;
             }
