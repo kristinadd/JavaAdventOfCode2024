@@ -58,15 +58,6 @@ public class MullItOver {
     return processedInstructions;
   }
 
-
-  // public static void convertInstructionsToInt(String[][] processedInstructions) {
-  //   int[][][] intInstructions = new int[processedInstructions.length][2][1];
-
-  //   for (int i=0; i<processedInstructions.length; i++) {
-  //     intInstructions[i][0] = new int[] { };
-  //   }
-  // }
-
   public static int[][][] convertInstructionsToInt(String[][] processedInstructions) {
     // Initialize the 3D array of integers
     int[][][] intInstructions = new int[processedInstructions.length][2][1];
@@ -86,12 +77,12 @@ public class MullItOver {
     }
 
     // Print the 3D array for debugging
-    for (int[][] outerArray : intInstructions) {
-        for (int[] innerArray : outerArray) {
-            System.out.print("[" + innerArray[0] + "] ");
-        }
-        System.out.println();
-    }
+    // for (int[][] outerArray : intInstructions) {
+    //     for (int[] innerArray : outerArray) {
+    //         System.out.print("[" + innerArray[0] + "] ");
+    //     }
+    //     System.out.println();
+    // }
     return intInstructions;
   }
 
