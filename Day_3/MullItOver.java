@@ -83,6 +83,7 @@ public class MullItOver {
     //     }
     //     System.out.println();
     // }
+    // System.out.println(Arrays.deepToString(intInstructions));
     return intInstructions;
   }
 
@@ -101,8 +102,8 @@ public class MullItOver {
         cumulativeSum += product;
 
         // Print the current product and cumulative sum
-        System.out.println("Instruction " + (i + 1) + ": " + firstNumber + " * " + secondNumber + " = " + product);
-        System.out.println("Cumulative Sum: " + cumulativeSum);
+        // System.out.println("Instruction " + (i + 1) + ": " + firstNumber + " * " + secondNumber + " = " + product);
+        // System.out.println("Cumulative Sum: " + cumulativeSum);
     }
 
     // Final cumulative sum
