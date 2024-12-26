@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class MullItOver {
+public class MullItOverPartOne {
   static String filePath = "Day_3/day_3.csv";
 
   public static void main(String[] args) {
