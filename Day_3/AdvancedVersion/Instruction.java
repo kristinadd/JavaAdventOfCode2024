@@ -83,3 +83,4 @@ public class Instruction {
 // In cases like List<Instruction>, each object has a fixed overhead (e.g., 16 bytes for the header) in addition to its fields.
 // While objects provide flexibility, maintainability, and extensibility, they consume more memory and are slightly slower compared to primitive arrays.
 // Choose objects when you need encapsulation or complex behaviors and arrays when performance and memory efficiency are critical.
+
