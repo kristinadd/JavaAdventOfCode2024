@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -48,11 +49,14 @@ public class Day3Solution {
         String[] segments = memory.split("do\\(\\)");
 
         for (String segment : segments) {
+            // System.out.println(segment +"\n");
             // Keep only the part before "don't()" in each segment
             if (!segment.contains("don't()")) {
                 filteredMemory.append(segment);
             } else {
+                // System.out.println(segment);
                 filteredMemory.append(segment.split("don't\\(\\)")[0]);
+                System.out.println();
             }
         }
 
